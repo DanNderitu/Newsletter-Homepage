@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  background-color: Off-white hsl(36, 100%, 99%);
+  min-height: 100vh;
+  align-items: center;
+  margin: 5rem;
+  
+}
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  justify-content: flex-end;
+}
+
+.top .menu nav ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+.body{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.top .logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /*moves logo to far right*/
+}
+.upper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gridcolspan2 {
+  grid-column-end: span 2;
+}
+/* blackbackground grid */
+.gridrowspan2 {
+  grid-row-end: span 2;
+  background: black;
+  color: white;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.lower {
+  display: flex;
+  gap: 1rem;
+  min-width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  background-color: rgb(243, 240, 240);
+  gap: 0.3rem;
+  
+}
+
+.lower img {
+  display: flex;
+  width: 20%;
+}
+
+.one,
+.two,
+.three {
+  display: flex;
+}
+.words {
+  width: 100%; /*makes each section occupy all flex line */
+}
+a:link,
+a:visited {
+  color: Grayish blue: hsl(233, 8%, 79%);
+  text-decoration: none;
+}
+
+
+a:hover, a:active{
+  color: hotpink;
+  text-decoration: none;
+}
+.words h3:link, .words h3:visited{
+  color: black;
+}
+.words h3:hover, .words h3:active{
+  color: hotpink;
+}
+*{
+  font-family: Inter;
+  Font-size: 15px;
+}
+ .header h1{
+  font-weight: 800;
+  font-size: 30px;
+  padding-right: 2rem;
+ }
+.mainparagraph p{
+  font-weight: 300;
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+}
+.mainparagraph button {
+  width: 50%;
+  color: white;
+  background: hsl(5, 85%, 63%);
+  border-color: hsl(5, 85%, 63%);
+}
+.mainparagraph button:hover {
+  background: black;
+  border-color: black;
+}
+.gridrowspan2 h2, h3, p{
+  padding: 0.5rem;
+}
+.gridrowspan2 h2{
+  font-weight: 800;
+  font-size: 30px;
+  color: hsl(35, 77%, 62%);
+  padding-top: 0.5rem;
+}
+.gridrowspan2 h3{
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+.gridrowspan2 h3: :hover{
+  font-weight: 600;
+  font-size: 20px;
+  color: hsl(35, 77%, 62%);
+}
+.gridrowspan2 p{
+  font-weight: 200;
+  font-size: 15px;
+  color: rgb(226, 223, 223);
+}
+
+
